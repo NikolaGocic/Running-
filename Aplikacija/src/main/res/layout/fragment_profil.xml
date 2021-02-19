@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout11"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+        <LinearLayout
+            android:background="@color/colorPrimaryDark"
+            android:id="@+id/LinearLayout1"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="right">
+                <ImageView
+                    android:id="@+id/btnInfo"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@android:drawable/ic_dialog_info"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    />
+                    <ImageView
+                        android:id="@+id/btnLogout"
+                        android:layout_width="35dp"
+                        android:onClick="btnLogoutClick"
+                        android:layout_height="35dp"
+                        android:src="@drawable/power_off"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginBottom="5dp"
+                />
+
+            <TextView
+                android:id="@+id/txtImePrezime"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/White"
+                android:textSize="22sp"
+                android:text=""
+                android:textAlignment="center"
+                />
+        </LinearLayout>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_below="@+id/LinearLayout1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:background="@color/colorPrimaryDark"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/btnFind"
+                    android:background="@color/colorPrimary"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/White"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="105dp"
+                    android:layout_height="40dp"
+                    android:text="Find Friends"
+                    />
+
+                <Button
+                    android:id="@+id/btnAdd"
+                    android:background="@color/colorPrimary"
+                    android:layout_width="105dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/White"
+                    android:layout_gravity="center_vertical"
+                    android:text="Edit Profile"
+                    />
+                <Button
+                    android:id="@+id/btnList"
+                    android:layout_width="104dp"
+                    android:layout_height="40dp"
+                    android:textColor="@color/White"
+                    android:background="@color/colorPrimary"
+                    android:layout_marginLeft="5dp"
+                    android:layout_gravity="center_vertical"
+                    android:text="List Friends"
+                    />
+
+
+
+            </LinearLayout>
+
+
+
+
+        </android.support.v7.widget.CardView>
+
+        <LinearLayout
+            android:layout_below="@+id/cardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/colorPrimary"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtBrojAktivnosti"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/White"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:textAlignment="center"
+                android:textSize="15dp"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/txtTotalnaPretrcanaDistanca"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:textColor="@color/White"
+                android:layout_marginRight="30dp"
+                android:textAlignment="center"
+                android:textSize="15dp"
+                android:text="TextView" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            app:cardElevation="3dp"
+            app:cardUseCompatPadding="true"
+            app:cardPreventCornerOverlap="false">
+
+            <ListView
+                android:id="@+id/listView"
+                android:textColor="@color/White"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimary"></ListView>
+
+
+        </android.support.v7.widget.CardView>
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+</LinearLayout>
